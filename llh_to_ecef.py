@@ -7,9 +7,9 @@
 #  lon_deg: longitude in degrees
 #  hae_km: height above elipsoid in km
 # Output:
-#  Print the ecef coordinates of the given llh location
+#  Print the ecef coordinates (r_x_km, r_y_km, r_z_km) of the given llh location
 #
-# Written by Austin Zary
+# Written by: Austin Zary
 # Other contributors: None
 #
 # Optional license statement, e.g., See the LICENSE file for the license.
@@ -31,8 +31,8 @@ def calc_denom(ecc, lat_rad):
 
 # initialize script arguments
 lat_deg = float('nan') # latitude in degrees
-lon_deg = float('nan') # height above ellipsoid in km
-hae_km = float('nan') #
+lon_deg = float('nan') # longitude in degrees
+hae_km = float('nan') # height above ellipsoid in km
 
 # parse script arguments
 if len(sys.argv)==4:
